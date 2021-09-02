@@ -172,14 +172,19 @@ end
 
 board1 = Board.new
 board1.drawBoard
-sleep(2)
+
 i = 1
+counter = 1
+print "\nPresione 1 para continuar:"
+i = gets.to_i
 while i == 1 do
+    counter+=1
     
     board1.updateBoard
-    system("cls") || system("clear")
+    puts "\nGeneracion #{counter}"
     board1.drawBoard
     
+    print "\nPresione 1 para continuar:"
     i = gets.to_i
-    #sleep(1.2)
+   
 end
